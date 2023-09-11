@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg");
+    background-size: cover;
+}
+
+.container {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 8px red;
+    background-color: rgba(0, 0, 0, 0.511);
+    border-radius: 5px;
+}
+
+.month-year {
+    width: 96%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+
+}
+
+.selected-month-year {
+    color: white;
+}
+
+.calender {
+    width: 96%;
+    height: 60%;
+}
+
+.calender ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+
+.calender ul li {
+    width: calc(100%/7);
+    text-align: center;
+    padding-top: 1.5%;
+    color: white;
+}
+
+.day {
+    height: 85%;
+}
+
+.active {
+    background-color: rgb(86, 214, 86);
+    border-radius: 5px;
+}
+
+.date {
+    width: 94%;
+    height: 16%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.EnterDate {
+    font-size: larger;
+    padding: 1%;
+    width: 15%;
+    margin-right: 2%;
+    border-radius: 5px;
+}
+
+.week {
+    height: 15%;
+    font-size: larger;
+}
+
+.week>li {
+    background-color: rgb(228, 65, 65);
+}
+
+.week>li:hover {
+    background-color: rgb(156, 177, 240);
+    border-radius: 5px;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+select {
+    font-size: larger;
+    padding: 1%;
+    margin-right: 2%;
+}
+
+.submit {
+    font-size: larger;
+    padding: 1%;
+    background-color: rgb(94, 127, 227);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.day>li:hover {
+    background-color: rgb(206, 156, 156);
+    color: black;
+    border-radius: 5px;
+}
